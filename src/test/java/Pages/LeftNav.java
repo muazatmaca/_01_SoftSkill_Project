@@ -11,10 +11,10 @@ public class LeftNav extends Parent {
         PageFactory.initElements(GWD.getDriver(),this);
     }
 
-    @FindBy(xpath = "(//a[@class='oxd-main-menu-item'])[1]")
+    @FindBy(xpath = "//ul[@class='oxd-main-menu']//*[1]")
     public WebElement admin;
 
-
+//(//a[@class='oxd-main-menu-item'])[1]
 
     public WebElement getWebElement(String strButton) {
 

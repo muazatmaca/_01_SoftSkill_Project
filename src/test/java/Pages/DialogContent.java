@@ -33,8 +33,10 @@ public class DialogContent extends Parent{
     public WebElement usersButton;
 
 
-    @FindBy(xpath = "(//button[@type='button'])[4]")
+    @FindBy(xpath = "//div[@class='orangehrm-header-container']//button") // diger sayfalarda da ayni locater..
     public WebElement addButton;
+
+   // (//button[@type='button'])[4]
 
     @FindBy(xpath = "//h6[text()='Admin']")
     public WebElement adminText;
@@ -45,6 +47,8 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//div[@class='oxd-select-text-input'])[1]")
     public WebElement adminSelect;
 
+    @FindBy(xpath = "//div[@class='orangehrm-card-container']//h6")
+    public WebElement AddUser;
 
 
     public WebElement getWebElement(String strButton){
