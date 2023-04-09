@@ -32,6 +32,7 @@ public class Parent {
         wait.until(ExpectedConditions.textToBePresentInElement(element,value));
         Assert.assertTrue(element.getText().toLowerCase().contains(value.toLowerCase()),"no such text");
         new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).perform();
+        //GWD.getDriver().switchTo().alert().accept();
     }
 
     public void waitUntilClickable(WebElement element){

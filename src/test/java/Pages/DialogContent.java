@@ -23,13 +23,40 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//p[text()='My Actions']")
     public WebElement myActionsText;
 
+    @FindBy(xpath = "//h6[text()='User Management']")
+    public WebElement adminUserManagementText;
+
+    @FindBy(xpath = "//span[text()='User Management ']")
+    public WebElement userManagementButton;
+
+    @FindBy(xpath = "//span[text()='User Management ']")
+    public WebElement usersButton;
+
+
+    @FindBy(xpath = "(//button[@type='button'])[4]")
+    public WebElement addButton;
+
+    @FindBy(xpath = "//h6[text()='Admin']")
+    public WebElement adminText;
+
+    @FindBy(xpath = "((//div[@class='oxd-select-wrapper'])[1]//div)[1]")
+    public WebElement userRoleSelect;
+
+    @FindBy(xpath = "(//div[@class='oxd-select-text-input'])[1]")
+    public WebElement adminSelect;
+
+
+
     public WebElement getWebElement(String strButton){
         WebElement myElement=null;
 
         switch (strButton){
+            case "userManagementButton":return userManagementButton;
+            case "usersButton":return usersButton;
 
-
-
+            case "addButton":return addButton;
+            case "userRoleSelect":return userRoleSelect;
+            case "adminSelect":return adminSelect;
 
         }
 
