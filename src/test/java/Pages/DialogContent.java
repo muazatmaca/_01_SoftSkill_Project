@@ -50,6 +50,11 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//div[@class='orangehrm-card-container']//h6")
     public WebElement AddUser;
 
+    @FindBy(xpath = "//button[text()=' Save ']")
+    public WebElement saveButton;
+
+    @FindBy(xpath = "(//span[text()='Required'])[1]")
+    public WebElement requiredText;
 
     public WebElement getWebElement(String strButton){
         WebElement myElement=null;
