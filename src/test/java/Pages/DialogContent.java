@@ -56,10 +56,6 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//span[text()='Required'])[1]")
     public WebElement requiredText;
 
-
-
-
-
     public WebElement getWebElement(String strButton){
         WebElement myElement=null;
 
