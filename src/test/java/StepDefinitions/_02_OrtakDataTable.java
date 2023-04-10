@@ -14,7 +14,6 @@ public class _02_OrtakDataTable {
 
     LeftNav ln=new LeftNav();
 
-
     @And("Click on the element in LeftNaw")
     public void clickOnTheElementInLeftNaw(DataTable items) {
 
@@ -34,13 +33,9 @@ public class _02_OrtakDataTable {
         List<String> strButtons=items.asList(String.class);
 
         for (String strButton:strButtons){
-
             WebElement element=dc.getWebElement(strButton);
             dc.clickFunction(element);
         }
-
-
-
 
 
     }
