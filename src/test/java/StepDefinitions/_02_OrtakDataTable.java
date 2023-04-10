@@ -24,7 +24,6 @@ public class _02_OrtakDataTable {
             WebElement element=ln.getWebElement(strButton);
             ln.clickFunction(element);
         }
-
     }
 
     @And("Click on the element in Dialog")
@@ -36,8 +35,6 @@ public class _02_OrtakDataTable {
             WebElement element=dc.getWebElement(strButton);
             dc.clickFunction(element);
         }
-
-
     }
 
     @And("User sending the keys in Dialog Content")
@@ -48,6 +45,5 @@ public class _02_OrtakDataTable {
             WebElement element=dc.getWebElement(items.get(i).get(0));
             dc.sendKeysFunction(element,items.get(i).get(1));
         }
-
     }
 }
