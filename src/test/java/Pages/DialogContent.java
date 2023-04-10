@@ -56,7 +56,11 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//span[text()='Required'])[1]")
     public WebElement requiredText;
 
+    @FindBy(xpath = "(//input[@type='password'])[1]")
+    public WebElement add_password;
 
+    @FindBy(xpath = "//*[text()='Should have at least 8 characters']")
+    public WebElement notificationMessage;
 
 
 
@@ -70,6 +74,7 @@ public class DialogContent extends Parent{
             case "addButton":return addButton;
             case "userRoleSelect":return userRoleSelect;
             case "adminSelect":return adminSelect;
+            case "add_password":return add_password;
 
 
         }
