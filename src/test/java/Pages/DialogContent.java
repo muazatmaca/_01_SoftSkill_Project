@@ -50,17 +50,18 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//div[@class='orangehrm-card-container']//h6")
     public WebElement AddUser;
 
+    @FindBy(xpath = "(//input[@type='password'])[1]")
+    public WebElement add_password;
+
+    @FindBy(xpath = "//*[text()='Should have at least 8 characters']")
+    public WebElement notificationMessage;
     @FindBy(xpath = "//button[text()=' Save ']")
     public WebElement saveButton;
 
     @FindBy(xpath = "(//span[text()='Required'])[1]")
     public WebElement requiredText;
 
-    @FindBy(xpath = "(//input[@type='password'])[1]")
-    public WebElement add_password;
 
-    @FindBy(xpath = "//*[text()='Should have at least 8 characters']")
-    public WebElement notificationMessage;
 
 
 
