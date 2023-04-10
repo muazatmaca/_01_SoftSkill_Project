@@ -16,6 +16,14 @@ Feature: Login Functionality
     And Click on the element in Dialog
       | addButton |
 
+    And User should login Admin page succesfully
+
+
+
+
+
+
+
 
 
 
