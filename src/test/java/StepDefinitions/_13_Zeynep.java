@@ -23,8 +23,13 @@ public class _13_Zeynep {
     }
 
     @Then("Notification message schould be displayed")
-    public void notificationMessageSchouldBeDisplayed() {
-        dc.verifyContainsTextFunction(dc.notificationMessage,"least 8 characters");
+    public void notificationMessageSchouldBeDisplayed(DataTable dt) {
+        List<List<String>> items=dt.asLists(String.class);
+
+        for (int i = 0; i < items.size(); i++) {
+            WebElement element=dc.getWebElement(items.get(i).get(0));
+            dc.verifyContainsTextFunction(element,items.get(i).get(1));
+        }
 
     }
 }

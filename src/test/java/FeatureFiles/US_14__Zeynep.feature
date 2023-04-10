@@ -5,7 +5,7 @@ Feature: User Management Functionality
     When Enter username and password and click login button
     Then User should login succesfully
 
-  Scenario:  Notification message when entering value in the password rest than 8 characters.
+  Scenario: Notification message when entering value in the password field which doesn’t have lower case character.
 
     And Click on the element in LeftNaw
       | admin |
@@ -16,7 +16,7 @@ Feature: User Management Functionality
       | addButton |
 
     And Password sending the keys in Dialog Content
-      | add_password | 123  |
+      | add_password | abcdefgh  |
 
     Then Notification message schould be displayed
-      | notificationMessage | least 8 characters  |
+      | notificationMessage | different password  |

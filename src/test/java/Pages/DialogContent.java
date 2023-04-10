@@ -56,6 +56,11 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//span[text()='Required'])[1]")
     public WebElement requiredText;
 
+    @FindBy(xpath = "(//input[@type='password'])[1]")
+    public WebElement add_password;
+
+    @FindBy(xpath = "(//*[@class='oxd-input-group oxd-input-field-bottom-space'])[5]//span")
+    public WebElement notificationMessage;
 
     public WebElement getWebElement(String strButton){
         WebElement myElement=null;
@@ -67,7 +72,8 @@ public class DialogContent extends Parent{
             case "addButton":return addButton;
             case "userRoleSelect":return userRoleSelect;
             case "adminSelect":return adminSelect;
-
+            case "add_password":return add_password;
+            case "notificationMessage":return notificationMessage;
 
         }
 
