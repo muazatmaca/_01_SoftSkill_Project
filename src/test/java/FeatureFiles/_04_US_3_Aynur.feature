@@ -13,9 +13,9 @@ Feature: SaveButton Functionality
 
     Then User should login Admin User Management succesfully
 
-    And Click on add button
-
-    And  Click on save button
+    And Click on the element in LeftNaw
+      | addButton |
+      | saveButton |
 
     Then Required text is displayed
 
