@@ -29,6 +29,7 @@ public class _13_Zeynep {
         for (int i = 0; i < items.size(); i++) {
             WebElement element=dc.getWebElement(items.get(i).get(0));
             dc.verifyContainsTextFunction(element,items.get(i).get(1));
+
         }
 
     }
