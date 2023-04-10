@@ -59,7 +59,7 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//input[@type='password'])[1]")
     public WebElement add_password;
 
-    @FindBy(xpath = "//*[text()='Should have at least 8 characters']")
+    @FindBy(xpath = "(//*[@class='oxd-input-group oxd-input-field-bottom-space'])[5]//span")
     public WebElement notificationMessage;
 
 
@@ -75,7 +75,7 @@ public class DialogContent extends Parent{
             case "userRoleSelect":return userRoleSelect;
             case "adminSelect":return adminSelect;
             case "add_password":return add_password;
-
+            case "notificationMessage":return notificationMessage;
 
         }
 
