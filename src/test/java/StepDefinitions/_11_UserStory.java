@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
 public class _11_UserStory {
@@ -17,5 +18,10 @@ public class _11_UserStory {
     public void userShouldLoginAdminPageSuccesfully() {
         dc.verifyContainsTextFunction(dc.adminText,"Admin");
 
+    }
+
+    @And("Click the addButton")
+    public void clickTheAddButton() {
+        dc.clickFunction(dc.addButton);
     }
 }

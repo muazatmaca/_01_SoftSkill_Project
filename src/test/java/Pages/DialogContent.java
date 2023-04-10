@@ -62,8 +62,6 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//*[@class='oxd-input-group oxd-input-field-bottom-space'])[5]//span")
     public WebElement notificationMessage;
 
-
-
     public WebElement getWebElement(String strButton){
         WebElement myElement=null;
 
