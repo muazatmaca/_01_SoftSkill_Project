@@ -18,6 +18,10 @@ Feature: Login Functionality
 
     And User should login Admin page succesfully
 
+    And Password sending the keys in Dialog Content
+
+
+
 
 
 
