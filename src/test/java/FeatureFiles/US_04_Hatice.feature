@@ -15,9 +15,20 @@ Feature: User Mandatory Field Funtionality
 
     And Click on the element in Dialog
       | addButton |
-      
-    And  Click on save button
-      | saveButton |
+
+  And  Click on the element in Dialog
+    |userRoleSelect|
+    |adminSelect   |
+
+    And Enter employee Name
+      |employeeName|first last|
+
+
+    And Password sending the keys in Dialog Content
+
+      | add_password | 484448Bd.  |
+      |add_passwordConfirm|484448Bd.|
+
 
 
 

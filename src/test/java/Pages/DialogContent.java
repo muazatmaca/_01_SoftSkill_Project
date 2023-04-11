@@ -11,10 +11,10 @@ public class DialogContent extends Parent{
     public DialogContent() {
         PageFactory.initElements(GWD.getDriver(),this);
     }
-    @FindBy(xpath = "//input[@placeholder='username']")
+    @FindBy(xpath = "//input[@placeholder='Username']")
     public WebElement username;
 
-    @FindBy(xpath = "//input[@placeholder='password']")
+    @FindBy(xpath = "//input[@placeholder='Password']")
     public WebElement password;
 
     @FindBy(xpath = "//button[@type='submit']")
