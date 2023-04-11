@@ -16,8 +16,6 @@ Feature: User Mandatory Field Funtionality
     And Click on the element in Dialog
       | addButton |
 
-    And Click on the element in Dialog
-      |userRoleSelect|
 
 
 
