@@ -8,6 +8,7 @@ Feature: Login Functionality
 
   Scenario: in the password rest than eight characters.
 
+
     And Click on the element in LeftNaw
       | admin |
 
