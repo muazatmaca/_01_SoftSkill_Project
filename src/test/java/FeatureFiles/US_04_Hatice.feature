@@ -6,9 +6,9 @@ Feature: User Mandatory Field Funtionality
     When Enter username and password and click login button
     Then User should login succesfully
 
-    Scenario:Validating user account by providing the Mandatory fields
+  Scenario:Validating user account by providing the Mandatory fields
 
-      And Click on the element in LeftNaw
+    And Click on the element in LeftNaw
       | admin |
 
     Then User should login Admin User Management succesfully
@@ -16,7 +16,9 @@ Feature: User Mandatory Field Funtionality
     And Click on the element in Dialog
       | addButton |
 
-    And Click on the element in Dialog
-      |userRoleSelect|
+    And  Click on save button
+      | saveButton |
+
+
 
 
