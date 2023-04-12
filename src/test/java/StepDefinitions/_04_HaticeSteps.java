@@ -24,7 +24,18 @@ public class _04_HaticeSteps {
     }
 
 
+    @And("Username sending the keys in Diyalog Content")
+    public void usernameSendingTheKeysInDiyalogContent(DataTable dt) {
+        List < List<String> > items=dt.asLists(String.class);
 
+        for (int i = 0; i < items.size(); i++)
+        {
+            WebElement element=dc.getWebElement(items.get(i).get(0));
+            dc.sendKeysFunction(element,items.get(i).get(1));
+        }
 
-
+    }
 }
+
+
+

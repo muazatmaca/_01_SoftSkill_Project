@@ -47,11 +47,21 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "(//div[@class='oxd-select-text-input'])[1]")
     public WebElement adminSelect;
 
+    @FindBy(xpath = "((//div[@class='oxd-select-text--after'])[2]/i)")
+    public WebElement userStatusSelect;
+
+    @FindBy(xpath="//div[text()='Enabled']")
+    public WebElement EnableSelect;
+
+    @FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
+    public WebElement userName;
+
     @FindBy(xpath = "//div[@class='orangehrm-card-container']//h6")
     public WebElement AddUser;
 
     @FindBy(xpath = "//button[text()=' Save ']")
     public WebElement saveButton;
+
 
     @FindBy(xpath = "(//span[text()='Required'])[1]")
     public WebElement requiredText;
@@ -74,22 +84,28 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//span[text()='Invalid']")
     public WebElement invalidMessage;
 
+    @FindBy(xpath = "//span[text()='Already exists']")
+    public WebElement alreadyExistsMsg;
+
     public WebElement getWebElement(String strButton){
         WebElement myElement=null;
 
         switch (strButton){
             case "userManagementButton":return userManagementButton;
             case "usersButton":return usersButton;
-
             case "addButton":return addButton;
             case "userRoleSelect":return userRoleSelect;
             case "adminSelect":return adminSelect;
+            case "userStatueSelect" : return  userStatusSelect;
+            case  "statusSelect" : return EnableSelect;
+            case "userName" : return userName;
             case "add_password":return add_password;
             case "notificationMessage":return notificationMessage;
             case "add_passwordConfirm":return add_passwordConfirm;
             case "matchErrorMessage":return matchErrorMessage;
             case "employeeName":return employeeName;
             case "invalidMessage":return invalidMessage;
+            case "alreadyExists" : return alreadyExistsMsg;
         }
 
         return null;

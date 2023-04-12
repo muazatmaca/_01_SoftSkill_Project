@@ -20,14 +20,22 @@ Feature: User Mandatory Field Funtionality
     |userRoleSelect|
     |adminSelect   |
 
-    And Enter employee Name
-      |employeeName|first last|
+ And Click on the element in Dialog
+    |
 
+    And Enter employee Name
+      |employeeName|Linda Anderson|
+
+    And  Username sending the keys in Diyalog Content
+    |userName|654321kjhgf|
 
     And Password sending the keys in Dialog Content
-
       | add_password | 484448Bd.  |
       |add_passwordConfirm|484448Bd.|
+
+
+
+
 
 
 
