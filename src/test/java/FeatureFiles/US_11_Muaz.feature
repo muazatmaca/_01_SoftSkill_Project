@@ -1,14 +1,11 @@
-Feature: Login Functionality
+Feature: OrangeHRM
 
   Background:
-
     Given Navigate to OrangeHRM
     When Enter username and password and click login button
     Then User should login succesfully
 
-  Scenario: in the password rest than eight characters.
-
-
+  Scenario: Seeing all required elements when user management page
     And Click on the element in LeftNaw
       | admin |
 
@@ -17,22 +14,5 @@ Feature: Login Functionality
     And Click on the element in Dialog
       | addButton |
 
-    And User should login Admin page succesfully
-
-    And Password sending the keys in Dialog Content
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    And All elements should be displayed management page
 
