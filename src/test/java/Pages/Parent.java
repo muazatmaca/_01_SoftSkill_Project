@@ -52,4 +52,8 @@ public class Parent {
         js.executeScript("arguments[0].scrollIntoView(false);",element);
 
     }
+
+    public void elementsDisplayed(WebElement element){
+        Assert.assertTrue(element.isDisplayed());
+    }
 }

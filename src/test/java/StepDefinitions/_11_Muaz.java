@@ -4,7 +4,7 @@ import Pages.DialogContent;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
-public class _11_UserStory {
+public class _11_Muaz {
     DialogContent dc=new DialogContent();
     @Then("User should login Admin User Management succesfully")
     public void userShouldLoginAdminUserManagementSuccesfully() {
@@ -20,8 +20,11 @@ public class _11_UserStory {
 
     }
 
-    @And("Click the addButton")
-    public void clickTheAddButton() {
-        dc.clickFunction(dc.addButton);
+    @And("All elements should be displayed management page")
+    public void allElementsShouldBeDisplayedManagementPage() {
+
+        dc.elementsDisplayed(dc.userRoleSelectTxt);
+
+
     }
 }

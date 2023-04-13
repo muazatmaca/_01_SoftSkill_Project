@@ -44,6 +44,10 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "((//div[@class='oxd-select-wrapper'])[1]//div)[1]")
     public WebElement userRoleSelect;
 
+    @FindBy(xpath = "//label[text()='User Role']")
+    public WebElement userRoleSelectTxt;
+
+
     @FindBy(xpath = "(//div[@class='oxd-select-text-input'])[1]")
     public WebElement adminSelect;
 
@@ -106,6 +110,7 @@ public class DialogContent extends Parent{
             case "employeeName":return employeeName;
             case "invalidMessage":return invalidMessage;
             case "alreadyExists" : return alreadyExistsMsg;
+            case "userRoleSelectTxt":return userRoleSelectTxt;
         }
 
         return null;
