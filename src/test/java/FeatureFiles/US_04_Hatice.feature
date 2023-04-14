@@ -20,8 +20,9 @@ Feature: User Mandatory Field Funtionality
     |userRoleSelect|
     |adminSelect   |
 
- And Click on the element in Dialog
-    |
+   And Click on the element in Dialog
+    |userStatusSelect|
+    |EnabledSelect|
 
     And Enter employee Name
       |employeeName|Linda Anderson|
