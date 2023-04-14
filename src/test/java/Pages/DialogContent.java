@@ -54,8 +54,11 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "((//div[@class='oxd-select-text--after'])[2]/i)")
     public WebElement userStatusSelect;
 
+    @FindBy(xpath = "//label[text()='Status']")
+    public WebElement userStatusSelectTxt;
+
     @FindBy(xpath="//div[text()='Enabled']")
-    public WebElement EnableSelect;
+    public WebElement EnabledSelect;
 
     @FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
     public WebElement userName;
@@ -100,8 +103,9 @@ public class DialogContent extends Parent{
             case "addButton":return addButton;
             case "userRoleSelect":return userRoleSelect;
             case "adminSelect":return adminSelect;
-            case "userStatueSelect" : return  userStatusSelect;
-            case  "statusSelect" : return EnableSelect;
+            case "userStatusSelect" : return  userStatusSelect;
+            case  "EnabledSelect" : return EnabledSelect;
+            case "userStatusSelectTxt" :return userStatusSelectTxt;
             case "userName" : return userName;
             case "add_password":return add_password;
             case "notificationMessage":return notificationMessage;
