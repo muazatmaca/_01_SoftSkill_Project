@@ -8,13 +8,13 @@ Feature: SaveButton Functionality
 
   Scenario: Seeing notification message when pressing saveButton without entering mandotary fields
 
-    And Click on the element in LeftNaw
+    And Click on the element in LeftNav
       | admin |
 
     Then User should login Admin User Management succesfully
 
-    And Click on the element in LeftNaw
-      | addButton |
+    And Click on the element in Dialog Content
+      | addButton  |
       | saveButton |
 
     Then Required text is displayed

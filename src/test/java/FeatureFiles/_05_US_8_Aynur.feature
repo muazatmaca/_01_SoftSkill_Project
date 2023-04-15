@@ -8,7 +8,7 @@ Feature: AddButton Functionality
 
   Scenario: Seeing add button when navigating to user management page
 
-    And Click on the element in LeftNaw
+    And Click on the element in LeftNav
       | admin |
 
     Then User should login Admin User Management succesfully
