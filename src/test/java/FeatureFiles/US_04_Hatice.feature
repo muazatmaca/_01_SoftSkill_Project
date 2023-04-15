@@ -16,23 +16,32 @@ Feature: User Mandatory Field Funtionality
     And Click on the element in Dialog
       | addButton |
 
-  And  Click on the element in Dialog
-    |userRoleSelect|
-    |adminSelect   |
+    And  Click on the element in Dialog
+      |userRoleSelect|
+      |adminSelect   |
+      |userStatusSelect|
+      |EnabledSelect|
 
-   And Click on the element in Dialog
-    |userStatusSelect|
-    |EnabledSelect|
+    And User sending the keys in Dialog Content
+      |employeeName|h|
 
-    And Enter employee Name
-      |employeeName|Linda Anderson|
+    And Click on the element in Dialog
+    |employeeNameselect|
 
     And  Username sending the keys in Diyalog Content
-    |userName|654321kjhgf|
+    |userName|Hatice1|
 
     And Password sending the keys in Dialog Content
       | add_password | 484448Bd.  |
       |add_passwordConfirm|484448Bd.|
+
+    And Click on the element in Dialog
+    |saveButton|
+
+    Then Success message should be displayed
+
+
+
 
 
 

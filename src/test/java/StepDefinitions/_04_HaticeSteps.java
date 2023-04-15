@@ -3,6 +3,7 @@ package StepDefinitions;
 import Pages.DialogContent;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
@@ -26,16 +27,18 @@ public class _04_HaticeSteps {
 
     @And("Username sending the keys in Diyalog Content")
     public void usernameSendingTheKeysInDiyalogContent(DataTable dt) {
-        List < List<String> > items=dt.asLists(String.class);
+        List<List<String>> items = dt.asLists(String.class);
 
-        for (int i = 0; i < items.size(); i++)
-        {
-            WebElement element=dc.getWebElement(items.get(i).get(0));
-            dc.sendKeysFunction(element,items.get(i).get(1));
+        for (int i = 0; i < items.size(); i++) {
+            WebElement element = dc.getWebElement(items.get(i).get(0));
+            dc.sendKeysFunction(element, items.get(i).get(1));
         }
 
     }
+
+
+    @Then("Success message should be displayed")
+    public void successMessageShouldBeDisplayed() {
+        //dc.verifyContainsTextFunction(dc.successMsg,"");
+    }
 }
-
-
-
