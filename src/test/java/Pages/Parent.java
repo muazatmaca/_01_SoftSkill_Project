@@ -54,6 +54,7 @@ public class Parent {
     }
 
     public void elementsDisplayed(WebElement element){
+        wait.until(ExpectedConditions.visibilityOf(element));
         Assert.assertTrue(element.isDisplayed());
     }
 }
