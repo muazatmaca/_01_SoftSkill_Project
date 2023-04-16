@@ -41,24 +41,24 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//h6[text()='Admin']")
     public WebElement adminText;
 
-    @FindBy(xpath = "((//div[@class='oxd-select-wrapper'])[1]//div)[1]")
-    public WebElement userRoleSelect;
-
     @FindBy(xpath = "//label[text()='User Role']")
     public WebElement userRoleSelectTxt;
-
-
-    @FindBy(xpath = "(//div[@class='oxd-select-text-input'])[1]")
-    public WebElement adminSelect;
-
-    @FindBy(xpath = "((//div[@class='oxd-select-text--after'])[2]/i)")
-    public WebElement userStatusSelect;
 
     @FindBy(xpath = "//label[text()='Status']")
     public WebElement userStatusSelectTxt;
 
-    @FindBy(xpath="//div[text()='Enabled']")
+    @FindBy(xpath = "(//div[@class='oxd-select-text--after'])[1]")
+    public WebElement userRoleSelect;
+
+    @FindBy(xpath = "(//div[@role='listbox'])//*[3]")
+    public WebElement adminSelect;
+
+    @FindBy(xpath = "(//div[@class='oxd-select-text--after'])[2]")
+    public WebElement userStatusSelect;
+
+    @FindBy(xpath="(//div[@role='listbox'])//*[2]")
     public WebElement EnabledSelect;
+
 
     @FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
     public WebElement userName;
@@ -88,6 +88,12 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//input[@placeholder='Type for hints...']")
     public WebElement employeeName;
 
+    @FindBy(xpath="(//div[@role='listbox'])//*[2]")
+    public WebElement employeeNameselect;
+
+    @FindBy(xpath = "")
+    WebElement successMsg;
+
     @FindBy(xpath = "//span[text()='Invalid']")
     public WebElement invalidMessage;
 
@@ -112,9 +118,13 @@ public class DialogContent extends Parent{
             case "add_passwordConfirm":return add_passwordConfirm;
             case "matchErrorMessage":return matchErrorMessage;
             case "employeeName":return employeeName;
+            case "employeeNameselect" :return employeeNameselect;
+            case "saveButton" :return saveButton;
+            case "successMsg" :return successMsg;
             case "invalidMessage":return invalidMessage;
             case "alreadyExists" : return alreadyExistsMsg;
             case "userRoleSelectTxt":return userRoleSelectTxt;
+
         }
 
         return null;

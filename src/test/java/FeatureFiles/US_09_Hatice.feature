@@ -18,7 +18,7 @@ Feature: Already Taken Name Functionality
       | addButton |
 
     And Username sending the keys in Diyalog Content
-      | userName | HaticeDere |
+      | userName | HaticeDere1 |
 
   Scenario: Register With The Same Username
 
@@ -30,6 +30,6 @@ Feature: Already Taken Name Functionality
       | addButton |
 
     And Username sending the keys in Diyalog Content
-      | userName | HaticeDere |
+      | userName | HaticeDere1|
 
     Then Already exist message should be displayed
