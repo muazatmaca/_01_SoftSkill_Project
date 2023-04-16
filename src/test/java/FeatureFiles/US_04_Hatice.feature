@@ -29,7 +29,7 @@ Feature: User Mandatory Field Funtionality
     |employeeNameselect|
 
     And  Username sending the keys in Diyalog Content
-    |userName|Hatice1|
+    |userName|Hatice2|
 
     And Password sending the keys in Dialog Content
       | add_password | 484448Bd.  |
