@@ -15,4 +15,13 @@ Feature: OrangeHRM
       | addButton |
 
     And All elements should be displayed management page
+      | userRoleSelect      |
+      | userStatusSelect    |
+      | employeeName        |
+      | userName            |
+      | add_password        |
+      | add_passwordConfirm |
+      | cancelButton        |
+      | savveButton         |
+
 

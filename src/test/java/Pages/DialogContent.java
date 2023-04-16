@@ -88,6 +88,15 @@ public class DialogContent extends Parent{
     @FindBy(xpath = "//input[@placeholder='Type for hints...']")
     public WebElement employeeName;
 
+    @FindBy(xpath = "//button[text()=' Cancel ']")
+    public WebElement cancelButton;
+
+
+    @FindBy(xpath = "//button[text()=' Cancel ']")
+    public WebElement savveButton;
+
+
+
     @FindBy(xpath="(//div[@role='listbox'])//*[2]")
     public WebElement employeeNameselect;
 
@@ -124,6 +133,8 @@ public class DialogContent extends Parent{
             case "invalidMessage":return invalidMessage;
             case "alreadyExists" : return alreadyExistsMsg;
             case "userRoleSelectTxt":return userRoleSelectTxt;
+            case "cancelButton":return cancelButton;
+            case "savveButton":return savveButton;
 
         }
 
