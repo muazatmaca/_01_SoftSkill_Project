@@ -17,8 +17,31 @@ Feature: Already Taken Name Functionality
     And Click on the element in Dialog
       | addButton |
 
+    And  Click on the element in Dialog
+      |userRoleSelect|
+      |adminSelect   |
+      |userStatusSelect|
+      |EnabledSelect|
+
+    And User sending the keys in Dialog Content
+      |employeeName|j|
+
+    And Click on the element in Dialog
+      |employeeNameselect|
+
     And Username sending the keys in Diyalog Content
-      | userName | HaticeDere1 |
+      | userName | BedirSalih |
+
+    And Password sending the keys in Dialog Content
+      | add_password | 484448Bd.  |
+      |add_passwordConfirm|484448Bd.|
+
+    And Click on the element in Dialog
+      |saveButton|
+
+    Then Success message should be displayed
+
+
 
   Scenario: Register With The Same Username
 
@@ -29,7 +52,27 @@ Feature: Already Taken Name Functionality
     And Click on the element in Dialog
       | addButton |
 
+
+    And  Click on the element in Dialog
+      |userRoleSelect|
+      |adminSelect   |
+      |userStatusSelect|
+      |EnabledSelect|
+
+    And User sending the keys in Dialog Content
+      |employeeName|j|
+
+    And Click on the element in Dialog
+      |employeeNameselect|
+
     And Username sending the keys in Diyalog Content
-      | userName | HaticeDere1|
+      | userName | BedirSalih |
+
+    And Password sending the keys in Dialog Content
+      | add_password | 484448Bd.  |
+      |add_passwordConfirm|484448Bd.|
+
+    And Click on the element in Dialog
+      |saveButton|
 
     Then Already exist message should be displayed
