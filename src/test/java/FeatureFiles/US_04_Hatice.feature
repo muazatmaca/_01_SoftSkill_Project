@@ -29,17 +29,16 @@ Feature: User Mandatory Field Funtionality
     |employeeNameselect|
 
     And  Username sending the keys in Diyalog Content
-    |userName|Hatice2|
+    |userName|Hatice07|
 
     And Password sending the keys in Dialog Content
       | add_password | 484448Bd.  |
       |add_passwordConfirm|484448Bd.|
 
-    And Click on the element in Dialog
+    And Click on the saveButton element in Dialog Content
     |saveButton|
 
     Then Success message should be displayed
-
 
 
 

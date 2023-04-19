@@ -100,8 +100,8 @@ public class DialogContent extends Parent{
     @FindBy(xpath="(//div[@role='listbox'])//*[2]")
     public WebElement employeeNameselect;
 
-    @FindBy(xpath = "")
-    WebElement successMsg;
+    @FindBy(xpath = "//*[text()='Success']")
+    public WebElement successMsg;
 
     @FindBy(xpath = "//span[text()='Invalid']")
     public WebElement invalidMessage;
