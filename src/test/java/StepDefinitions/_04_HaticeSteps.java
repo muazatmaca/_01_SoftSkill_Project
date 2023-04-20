@@ -36,9 +36,22 @@ public class _04_HaticeSteps {
 
     }
 
+    @And("Click on the saveButton element in Dialog Content")
+    public void clickOnTheSaveButtonElementInDialogContent(DataTable items) throws InterruptedException {
+        List<String> strButtons=items.asList(String.class);
+
+        for (String strButton: strButtons) {
+            WebElement element=dc.getWebElement(strButton);
+            Thread.sleep(500);
+            dc.clickFunction(element);
+        }
+        }
+
+
+
 
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
-        //dc.verifyContainsTextFunction(dc.successMsg,"");
+       // dc.verifyContainsTextFunction(dc.successMsg,"");
     }
 }
